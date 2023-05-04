@@ -1,0 +1,530 @@
+/* Big screen :1200px. */
+@media (min-width: 1200px) and (max-width: 1500px) {
+    :root {
+        --f18: 16px;
+        --f20: 18px;
+        --f30: 24px;
+        --f40: 32px;
+    }
+
+    .container {
+        max-width: 1200px;
+    }
+
+    .box_style {
+        padding: 40px;
+    }
+
+    .title {
+        font-size: 26px;
+    }
+
+    .games_blk i img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .games2_blk {
+        margin-bottom: 20px;
+    }
+
+    .games_blk {
+        height: 420px;
+    }
+
+    .Results_blk_content {
+        padding: 18px;
+    }
+
+    .res_name_wrp .red {
+        padding: 10px 15px;
+    }
+
+    .res_name span {
+        width: 70px;
+        margin-top: -21px;
+    }
+
+    .Results_blk ul {
+        overflow: auto;
+    }
+
+    .thm_btn {
+        padding: 14px 30px;
+        font-size: 14px;
+    }
+
+}
+
+
+/* Normal screen :992px. */
+@media (min-width: 992px) and (max-width: 1200px) {
+    :root {
+        --f18: 15px;
+        --f20: 18px;
+        --f30: 22px;
+        --f40: 28px;
+    }
+
+    .menu-area nav ul li a {
+        margin-left: 20px;
+    }
+
+    .logo-area {
+        max-width: 170px;
+    }
+
+    .container {
+        max-width: 1200px;
+    }
+
+    .box_style {
+        padding: 40px;
+    }
+
+
+
+    .games_blk i img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .games2_blk {
+        margin-bottom: 12px;
+    }
+
+    .games_blk {
+        height: 330px;
+    }
+
+    .Results_blk_content {
+        padding: 18px;
+    }
+
+    .res_name_wrp .red {
+        padding: 10px 15px;
+    }
+
+    .res_name span {
+        width: 95px;
+        margin-top: -54px;
+        margin-bottom: 15px;
+    }
+
+    .Results_blk ul {
+        overflow: auto;
+    }
+
+    .thm_btn {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    .hero_content h1 {
+        font-size: 70px;
+    }
+
+    .lottos_top ul li button {
+        margin-left: 10px;
+        padding: 8px 16px;
+        font-size: 13px;
+    }
+
+    .lottos_blk a {
+        padding: 12px 0;
+    }
+
+    .game_benner_content h1 {
+        font-size: 50px;
+    }
+
+    .games_ctg ul li a {
+        font-size: 18px;
+    }
+
+    .res_name {
+        flex-direction: column;
+    }
+
+    .res_name_wrp {
+        align-items: end;
+    }
+
+    .res_price_wrp h6 {
+        font-size: 14px;
+    }
+
+    .Results-area {
+        margin: 80px 0;
+    }
+
+    .footer_top {
+        padding: 20px 0;
+    }
+
+    .hero-Area {
+        height: 640px;
+    }
+
+    .game_benner-Area {
+        margin: 80px 0;
+    }
+
+}
+
+
+/* Tablet screen :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+    :root {
+        --f18: 15px;
+        --f20: 18px;
+        --f30: 22px;
+        --f40: 28px;
+    }
+
+    .menu-area nav ul li a {
+        margin-left: 20px;
+    }
+
+    .logo-area {
+        max-width: 170px;
+    }
+
+    .container {
+        max-width: 1200px;
+    }
+
+    .box_style {
+        padding: 40px;
+    }
+
+    .title {
+        margin-bottom: 30px;
+    }
+
+    .games_blk i img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+
+    .games_blk {
+        height: 330px;
+    }
+
+    .Results_blk_content {
+        padding: 18px;
+    }
+
+    .res_name_wrp .red {
+        padding: 10px 15px;
+    }
+
+    .res_name span {
+        width: 95px;
+        margin-top: -54px;
+        margin-bottom: 15px;
+    }
+
+    .Results_blk ul {
+        overflow: auto;
+    }
+
+    .thm_btn {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    .hero_content h1 {
+        font-size: 50px;
+    }
+
+    .hero_content {
+        max-width: 580px;
+        margin-top: 155px;
+    }
+
+    .lottos_top ul li button {
+        margin-left: 10px;
+        padding: 8px 16px;
+        font-size: 13px;
+    }
+
+    .lottos_blk a {
+        padding: 12px 0;
+    }
+
+    .game_benner_content h1 {
+        font-size: 50px;
+    }
+
+    .games_ctg ul li a {
+        font-size: 15px;
+    }
+
+    .res_name {
+        flex-direction: column;
+    }
+
+    .res_name_wrp {
+        align-items: end;
+    }
+
+    .res_price_wrp h6 {
+        font-size: 14px;
+    }
+
+    .Results-area {
+        margin: 80px 0;
+    }
+
+    .footer_top {
+        padding: 20px 0;
+    }
+
+    .hero-Area {
+        height: 530px;
+    }
+
+    .game_benner-Area {
+        margin: 80px 0;
+        padding: 50px 0;
+    }
+
+    .lottos_top {
+        flex-direction: column;
+    }
+
+    .gb_img {
+        display: none;
+    }
+
+    .game_benner_content {
+        max-width: 500px;
+        margin: auto;
+    }
+
+    .games-top {
+        flex-direction: column;
+        margin-bottom: 35px;
+    }
+}
+
+
+/* small screen :320px. */
+@media (max-width: 767px) {
+    :root {
+        --f18: 15px;
+        --f20: 18px;
+        --f30: 22px;
+        --f40: 28px;
+    }
+
+    .menu-area nav ul li a {
+        margin-left: 20px;
+    }
+
+    .logo-area {
+        max-width: 170px;
+    }
+
+    .header-area {
+        padding: 20px 0;
+    }
+
+    .container {
+        max-width: 1200px;
+    }
+
+    .box_style {
+        padding: 30px;
+    }
+
+    .title {
+        margin-bottom: 30px;
+    }
+
+    .games_blk i img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .games2_blk {
+        max-width: 275px;
+        margin-inline: auto;
+    }
+
+    .games_blk {
+        height: 330px;
+        max-width: 250px;
+        margin-inline: auto;
+    }
+
+    .Results_blk_content {
+        padding: 18px;
+    }
+
+    .res_name_wrp .red {
+        padding: 10px 15px;
+    }
+
+    .res_name span {
+        width: 95px;
+        margin-top: -54px;
+        margin-bottom: 15px;
+    }
+
+    .Results_blk ul {
+        overflow: auto;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .thm_btn {
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+
+    .hero_content h1 {
+        font-size: 30px;
+    }
+
+    .hero_content p {
+        font-size: 18px;
+        margin: 20px 0;
+    }
+
+    .hero_content {
+        max-width: 310px;
+        margin-top: 94px;
+    }
+
+    .lottos_top ul li button {
+        margin-left: 10px;
+        padding: 8px 16px;
+        font-size: 13px;
+    }
+
+    .lottos_blk a {
+        padding: 12px 0;
+    }
+
+    .game_benner_content h1 {
+        font-size: 42px;
+    }
+
+    .games_ctg ul li a {
+        font-size: 15px;
+    }
+
+    .res_name {
+        flex-direction: column;
+    }
+
+    .res_name_wrp {
+        align-items: end;
+    }
+
+    .res_price_wrp h6 {
+        font-size: 14px;
+    }
+
+    .Results-area {
+        margin: 50px 0;
+    }
+
+    .footer_top {
+        padding: 20px 0;
+    }
+
+    .hero-Area {
+        height: 373px;
+        background-position: center;
+        background-size: contain;
+    }
+
+    .game_benner-Area {
+        margin: 60px 0;
+        padding: 50px 0;
+    }
+
+    .lottos_top {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .lottos_top ul {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .gb_img {
+        display: none;
+    }
+
+    .game_benner_content {
+        max-width: 500px;
+        margin: auto;
+    }
+
+    .games-top {
+        flex-direction: column;
+        margin-bottom: 35px;
+    }
+
+    .footer_nav>ul {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .crypto_logo ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .footer_text {
+        flex-direction: column;
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+.footer_text i {
+    margin-bottom: 20px;
+}
+
+    .footer_btm_cont .footer_nav>ul {
+        margin-bottom: 10px;
+    }
+
+    .footer_btm_cont {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .footer_btm_cont ul li {
+        margin: auto;
+    }
+
+    .games_ctg ul {
+        width: 760px;
+    }
+
+    .games_ctg.mb_50 {
+        overflow: auto;
+    }
+
+}
+
+/* Large Mobile screen :480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .container {
+        width: 450px
+    }
+
+}

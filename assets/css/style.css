@@ -1,0 +1,1118 @@
+/*   Theme default css */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* ======font family=========
+font-family: 'Noto Sans', sans-serif;
+font-family: 'Open Sans', sans-serif;
+*/
+
+:root {
+  --redColor: #EE1C25;
+  --thmColor: #F7941D;
+  --bgColor: #201F37;
+  --f18: 18px;
+  --f20: 20px;
+  --f30: 30px;
+  --f40: 40px;
+}
+
+body {
+  font-weight: 400;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  background: #0D0C1F;
+  color: #fff;
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  cursor: pointer;
+}
+
+a:focus,
+button:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+a:focus,
+a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+a,
+button {
+  color: inherit;
+  outline: medium none;
+  text-decoration: none;
+}
+
+button:focus,
+input:focus,
+input:focus,
+textarea,
+textarea:focus {
+  outline: 0;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0px;
+  font-weight: 700;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: inherit;
+}
+
+h1 {
+  font-size: var(--f40);
+}
+
+h2 {
+  font-size: 35px;
+}
+
+h3 {
+  font-size: 28px;
+}
+
+h4 {
+  font-size: var(--f20);
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+li {
+  list-style: none;
+}
+
+.pb_150 {
+  padding-bottom: 150px;
+}
+
+.pb_100 {
+  padding-bottom: 100px;
+}
+
+.pb_50 {
+  padding-bottom: 50px;
+}
+
+.pt_150 {
+  padding-top: 150px;
+}
+
+.pt_100 {
+  padding-top: 100px;
+}
+
+.pt_50 {
+  padding-top: 50px;
+}
+
+.mb_150 {
+  margin-bottom: 150px;
+}
+
+.mb_100 {
+  margin-bottom: 100px;
+}
+
+.mb_50 {
+  margin-bottom: 50px;
+}
+
+.mt_150 {
+  margin-top: 150px;
+}
+
+.mt_100 {
+  margin-top: 100px;
+}
+
+.mt_50 {
+  margin-top: 50px;
+}
+
+.thm_btn {
+  padding: 16px 56px;
+  display: inline-block;
+  background: var(--thmColor);
+  font-size: var(--f20);
+  font-weight: 700;
+  font-family: 'Noto Sans', sans-serif;
+  border-radius: 10px;
+  transition: .3s;
+  border: 2px solid var(--thmColor);
+}
+
+.thm_btn.bdr {
+  background: none;
+}
+
+.thm_btn:hover {
+  background: rgb(247 148 29 / 80%);
+}
+
+/* default-css END 
+================================== */
+
+
+
+.header-area {
+  padding: 30px 0;
+  width: 100%;
+  z-index: 99;
+  background: #121127;
+  overflow: hidden;
+}
+
+.menu-area nav ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+.menu-area nav ul li a {
+  font-size: 16px;
+  display: inline-block;
+  margin-left: 40px;
+  position: relative;
+  transition: all .3s;
+}
+
+.menu-area nav ul li a.active {
+  color: var(--redColor);
+}
+
+.menu-area nav ul li a:hover {
+  color: var(--redColor);
+}
+
+.header_right {
+  text-align: right;
+}
+
+.hc_wrp {
+  display: flex;
+  align-items: center;
+}
+
+.amaunt a span {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--thmColor);
+  border-radius: 50%;
+  margin-right: 5px;
+  margin-left: 15px;
+  font-weight: 700;
+}
+
+.amaunt {
+  display: flex;
+  align-items: center;
+  width: max-content;
+}
+
+.amaunt a {
+  display: flex;
+  align-items: center;
+}
+
+.header_right>ul {
+  display: flex;
+  justify-content: end;
+  gap: 15px;
+}
+
+.header_right ul li a.thm_btn {
+  border: 2px solid var(--thmColor);
+  width: 110px;
+  font-size: 14px;
+  padding: 0;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  border-radius: 10px;
+}
+
+.header_right ul li {
+  display: inline-block;
+}
+
+/* Lang DropDown */
+.f-dropdown {
+  --max-scroll: 3;
+  position: relative;
+  z-index: 10;
+}
+
+.f-dropdown select {
+  display: none;
+}
+
+.f-dropdown>span {
+  cursor: pointer;
+  padding: 8px 5px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  color: #bbb;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.f-dropdown>span>span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-right: 12px;
+}
+
+.f-dropdown>span img {
+  width: 30px;
+  margin-right: 10px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.f-dropdown>span:before,
+.f-dropdown>span:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 8px;
+  height: 3px;
+  border-radius: 1px;
+  top: 50%;
+  right: 5px;
+  background: #fff;
+  transition: all 0.3s ease;
+}
+
+.f-dropdown>span:before {
+  margin-right: 4px;
+  transform: scale(0.96, 0.8) rotate(50deg);
+}
+
+.f-dropdown>span:after {
+  transform: scale(0.96, 0.8) rotate(-50deg);
+}
+
+.f-dropdown ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  max-height: calc(var(--max-scroll) * 46px);
+  top: 40px;
+  left: 5px;
+  z-index: 1;
+  right: 0;
+  border-radius: 6px;
+  transform-origin: 0 0;
+  transition: opacity 0.2s ease, visibility 0.2s ease, transform 0.3s cubic-bezier(0.4, 0.6, 0.5, 1.32);
+  transform: translate(0, 5px);
+  width: 35px;
+}
+
+.f-dropdown ul li {
+  padding: 0;
+  margin: 0;
+}
+
+.f-dropdown ul li a {
+  cursor: pointer;
+  display: block;
+  color: #000;
+  text-decoration: none;
+  outline: none;
+  position: relative;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+}
+
+.f-dropdown ul li a img {
+  width: 30px;
+  margin-right: 10px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.f-dropdown ul li a:hover {
+  color: #5C6BC0;
+}
+
+.f-dropdown ul li.active a {
+  color: #FFF;
+}
+
+.f-dropdown ul li.active a:before,
+.f-dropdown ul li.active a:after {
+  --scale: 0.6;
+  content: "";
+  display: block;
+  width: 10px;
+  height: 2px;
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  opacity: 0;
+  background: #FFF;
+  transition: all 0.2s ease;
+}
+
+.f-dropdown ul li.active a:before {
+  transform: rotate(45deg) scale(var(--scale));
+}
+
+.f-dropdown ul li.active a:after {
+  transform: rotate(-45deg) scale(var(--scale));
+}
+
+.f-dropdown ul li.active a:hover:before,
+.f-dropdown ul li.active a:hover:after {
+  --scale: 0.9;
+  opacity: 1;
+}
+
+.f-dropdown ul li:first-child a {
+  border-radius: 6px 6px 0 0;
+}
+
+.f-dropdown ul li:last-child a {
+  border-radius: 0 0 6px 6px;
+}
+
+.f-dropdown.disabled {
+  opacity: 0.7;
+}
+
+.f-dropdown.disabled>span {
+  cursor: not-allowed;
+}
+
+.f-dropdown.filled>span {
+  color: #fff;
+}
+
+.f-dropdown.open {
+  z-index: 15;
+}
+
+.f-dropdown.open>span {
+  border-color: #AAA;
+}
+
+.f-dropdown.open>span:before,
+.f-dropdown.open>span:after {
+  background: #fff;
+}
+
+.f-dropdown.open>span:before {
+  transform: scale(0.96, 0.8) rotate(-50deg);
+}
+
+.f-dropdown.open>span:after {
+  transform: scale(0.96, 0.8) rotate(50deg);
+}
+
+.f-dropdown.open ul {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0, 13px);
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s cubic-bezier(0.4, 0.6, 0.5, 1.32);
+}
+
+/* --------------------------- */
+.f-group {
+  max-width: 250px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.f-group select {
+  width: 100%;
+}
+
+.f-control {
+  font-size: 14px;
+  line-height: normal;
+  color: #000;
+  display: inline-block;
+  background-color: #ffffff;
+  border: #ccc 1px solid;
+  border-radius: 6px;
+  padding: 8px 12px;
+  outline: none;
+  max-width: 250px;
+}
+
+/* Lang DropDown */
+
+
+
+/* humbergar */
+.bar a {
+  width: 35px;
+  height: 35px;
+  float: right;
+  position: relative;
+}
+
+.bar a span {
+  width: 100%;
+  height: 3px;
+  background: var(--thmColor);
+  display: block;
+  position: relative;
+  top: 17px;
+  border-radius: 30px;
+  transition: .3s;
+}
+
+.bar a span:before {
+  left: 0;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: var(--thmColor);
+  bottom: 10px;
+  border-radius: 30px;
+  transition: .3s;
+}
+
+.bar a span:after {
+  left: 0;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: var(--thmColor);
+  bottom: -10px;
+  border-radius: 30px;
+  transition: .3s;
+}
+
+/* humbarger END */
+/* humbarger END */
+/* humbarger END */
+
+
+/* mobile-menu START */
+.mobile-menu {
+  position: fixed;
+  width: 320px;
+  height: 100vh;
+  background: #0d0c1f;
+  z-index: 99;
+  box-shadow: 0px 0px 9px -1px #737373;
+  top: 0;
+  left: 0;
+  transition: .3s;
+  margin-left: -400px;
+  padding-left: 40px;
+  padding-top: 100px;
+}
+
+.mobile-menu .header_right {
+  text-align: left;
+}
+
+.mobile-menu .header_right ul {
+  justify-content: start;
+  margin-top: 30px;
+}
+
+.mobile-menu .hc_wrp {
+  width: 130px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.siteBar {
+  margin-left: 0;
+}
+
+.mobile-menu ul#pills-tab {
+  margin-top: 90px;
+  margin-bottom: 35px !important;
+  display: block;
+}
+
+.mobile-menu nav ul li {
+  list-style: none;
+  display: block;
+}
+
+.mobile-menu nav ul li a {
+  font-size: 18px;
+  line-height: 50px;
+  transition: .3s;
+}
+
+.mobile-menu nav ul li a:hover {
+  color: var(--redColor);
+}
+
+.mobile-menu a.bars {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  font-size: 32px;
+  color: rgb(255, 0, 43);
+}
+
+/* Header section END */
+
+
+/*============hero Area Start =============*/
+.hero-Area {
+  height: 730px;
+  background-repeat: no-repeat;
+}
+
+.hero-Area .container {
+  height: 100%;
+}
+
+.container {
+  max-width: 1600px;
+}
+
+.hero_content {
+  text-align: center;
+  margin-top: 260px;
+  max-width: 930px;
+  margin-inline: auto;
+}
+
+.hero_content p {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 35px 0;
+}
+
+.hero_content h1 {
+  font-size: 90px;
+  font-weight: 800;
+  text-shadow: 0px 0px 6px #F7941D;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+/*============hero Area End =============*/
+
+
+/*============lottos Area Start =============*/
+
+.box_style {
+  background: #121127;
+  padding: 60px 60px 40px;
+  overflow: hidden;
+}
+
+.lottos_top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.lottos_top ul li button {
+  border: 1px solid var(--redColor);
+  border-radius: 10px;
+  background: no-repeat;
+  padding: 10px 22px;
+  font-size: 14px;
+  font-weight: 700;
+  margin-left: 20px;
+}
+
+.title {
+  font-size: var(--f30);
+  font-family: 'Noto Sans';
+  margin-bottom: 0;
+}
+
+.lottos_top ul li button.active {
+  background: var(--redColor);
+}
+
+.lottos_blk {
+  padding: 45px;
+  text-align: center;
+  background: var(--bgColor);
+  /* Drop Shadow */
+  box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.07);
+  border-radius: 10px;
+}
+
+.lottos_blk a {
+  font-size: 14px;
+  padding: 16px 0;
+  display: block;
+  margin-top: 20px;
+}
+
+.lottos_blk h1 {
+  font-weight: 900;
+  font-family: 'Noto Sans';
+}
+
+.lottos_blk p {
+  font-size: var(--f18);
+  font-weight: 500;
+  font-family: 'Noto Sans';
+  margin-bottom: 0;
+}
+
+.lottos_blk i {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-inline: auto;
+  margin-bottom: 20px;
+}
+
+.dot__style .owl-dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 30px;
+  align-items: center;
+}
+
+.dot__style .owl-dot {
+  width: 8px;
+  height: 8px;
+  background: var(--thmColor);
+  border-radius: 50%;
+}
+
+.dot__style .owl-dot.active {
+  width: 12px;
+  height: 12px;
+}
+
+/*============lottos Area End =============*/
+
+
+/*============game_benner Area Start =============*/
+
+.game_benner-Area {
+  margin: 100px 0;
+  overflow: hidden;
+}
+
+.game_benner_content {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  max-width: 720px;
+}
+
+.game_benner_content p {
+  font-size: var(--f18);
+  font-weight: 600;
+  margin: 24px 0;
+}
+
+.game_benner_content h1 {
+  text-shadow: 0px 0px 6px #F7941D;
+  font-size: 60px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+/*============game_benner Area End =============*/
+
+
+/*============games Area Start =============*/
+
+.games-Area {
+  overflow: hidden;
+}
+
+.games-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.src_blk {
+  background: var(--bgColor);
+  padding: 14px 20px;
+  border-radius: 10px;
+  max-width: 300px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.src_blk input {
+  background: none;
+  border: none;
+  color: #fff;
+  width: 100%;
+}
+
+.src_blk input::placeholder {
+  color: #fff;
+}
+
+.src_blk a {
+  flex-shrink: 0;
+  margin-left: 10px;
+}
+
+.games_ctg ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.games_ctg ul li {
+  display: inline-block;
+  background: var(--bgColor);
+  border-radius: 10px;
+  width: 100%;
+  flex: 0 0 18.5%;
+}
+
+.games_ctg ul li a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 22px;
+  align-items: center;
+  padding: 25px 0;
+  font-family: 'Noto Sans';
+  height: 180px;
+}
+
+.games_ctg ul li a span {
+  display: block;
+  margin-top: 20px;
+}
+
+.games_blk {
+  height: 380px;
+  position: relative;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.games_blk:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: linear-gradient(0deg, #000000 -0.21%, rgba(0, 0, 0, 0) 77.4%);
+  opacity: 0;
+  transition: all .3s;
+}
+
+.games_blk:hover:before {
+  opacity: 1;
+}
+
+.games_blk a {
+  position: absolute;
+  left: 50%;
+  bottom: 32px;
+  background: #F7941D;
+  border-radius: 10px;
+  font-weight: 700;
+  width: 105px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(-50%);
+  opacity: initial;
+  z-index: -1;
+  transition: all .3s;
+  visibility: hidden;
+}
+
+.games_blk a img {
+  margin-right: 7px;
+  display: block;
+}
+
+.games_blk:hover a {
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.games_blk a img {
+  flex-shrink: 0;
+}
+
+
+.games_blk i img {
+  height: 100%;
+}
+
+.games2_blk {
+  position: relative;
+  margin-bottom: 27px;
+}
+
+.gm_text {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+.gm_text a {
+  font-weight: 700;
+  font-size: 14px;
+  font-family: 'Noto Sans';
+}
+
+.gm_text h4 {
+  font-size: 24px;
+  font-family: 'Noto Sans';
+  margin-bottom: 0;
+}
+
+/*============games Area End =============*/
+
+
+/*============Results Area Start =============*/
+
+.Results-area {
+  margin: 100px 0;
+}
+
+.Results-area .lottos_top a.thm_btn {
+  font-size: 14px;
+  padding: 10px 22px;
+  background: no-repeat;
+  border: 1px solid var(--redColor) !important;
+}
+
+.res_name_wrp .red {
+  font-size: 14px;
+  padding: 10px 22px;
+  border: none;
+}
+
+.thm_btn.red {
+  background: var(--redColor);
+}
+
+.thm_btn.red:hover {
+  background: rgb(238 28 37 / 80%);
+}
+
+.Results_blk {
+  background: #201F37;
+  /* Drop Shadow */
+  box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.07);
+  border-radius: 10px;
+}
+
+.Results_blk ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px 0;
+  gap: 10px;
+}
+
+.Results_blk_content {
+  padding: 25px;
+  padding-top: 0;
+  margin-top: -48px;
+}
+
+.Results_blk_content ul li a {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #383751;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.res_name_wrp {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 55px;
+}
+
+.res_name {
+  display: flex;
+  align-items: center;
+}
+
+.res_name>div {
+  font-family: 'Noto Sans';
+}
+
+.res_name p {
+  margin-bottom: 0;
+  margin-top: -5px;
+}
+
+.res_name span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 125px;
+  margin-right: 10px;
+  margin-top: -60px;
+}
+
+.res_price_wrp {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.res_price_wrp h1 {
+  margin-bottom: 5px;
+}
+
+/*============Results Area End =============*/
+
+
+/*============footer Area Start =============*/
+
+.footer-area {
+  background: #121127;
+  font-size: 14px;
+}
+
+.footer_top {
+  border-bottom: 1px solid #201F37;
+  padding: 30px 0;
+}
+
+
+.footer_nav>ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer_nav ul li {
+  display: inline-block;
+}
+
+.footer_nav ul li a {
+  font-weight: 700;
+  font-family: 'Noto Sans';
+  transition: all .3s;
+}
+
+.footer_nav ul li a:hover {
+  color: var(--thmColor);
+}
+
+.crypto_logo {
+  padding: 30px 0 50px;
+}
+
+.crypto_logo ul {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1400px;
+  margin-inline: auto;
+}
+
+.footer_text {
+  display: flex;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.footer_text i {
+  display: block;
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+
+.footer_text p {
+  margin-bottom: 0;
+  font-family: 'Noto Sans';
+}
+
+.footer-btm {
+  border-top: 1px solid #201F37;
+  padding: 15px 0;
+}
+
+.footer_btm_cont {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_btm_cont ul li {
+  margin-left: 40px;
+}
+
+.footer_btm_cont p {
+  margin-bottom: 0;
+}
+
+/*============footer Area End =============*/
